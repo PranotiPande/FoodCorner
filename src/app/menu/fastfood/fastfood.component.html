@@ -1,0 +1,53 @@
+
+<body>
+    <div class="gallery">
+      <figure *ngFor="let food of fastfoodarr">
+        <img src="{{food.path}}" class="img">
+        <figcaption>Name:{{food.name}}</figcaption>
+        <figcaption>price:{{food.price}}</figcaption>
+        <button mat-raised-button color="warn" (click)="addToBill(food)">ADD</button>
+      </figure>
+     <!-- <figure>
+        <img src="./assets/images/img.jpeg">
+        <figcaption>Name:Vadapav</figcaption>
+        <figcaption>price:40</figcaption>
+        <button mat-raised-button color="warn">ADD</button>
+      </figure>
+      <figure>
+        <img src="./assets/images/img.jpeg">
+        <figcaption>Name:Vadapav</figcaption>
+        <figcaption>price:40</figcaption>
+        <button mat-raised-button color="warn">ADD</button>
+      </figure>
+      <figure>
+        <img src="./assets/images/img.jpeg">
+        <figcaption>Name:Vadapav</figcaption>
+        <figcaption>price:40</figcaption>
+        <button mat-raised-button color="warn">ADD</button>
+      </figure>
+      <figure>
+        <img src="./assets/images/img.jpeg">
+        <figcaption>Name:Vadapav</figcaption>
+        <figcaption>price:40</figcaption>
+        <button mat-raised-button color="warn">ADD</button>
+      </figure>
+      <figure>
+        <img src="./assets/images/img.jpeg">
+        <figcaption>Name:Vadapav</figcaption>
+        <figcaption>price:40</figcaption>
+        <button mat-raised-button color="warn">ADD</button>
+      </figure>
+      <figure>
+        <img src="./assets/images/img.jpeg">
+        <figcaption>Name:Vadapav</figcaption>
+        <figcaption>price:40</figcaption>
+        <button mat-raised-button color="warn">ADD</button>
+      </figure>
+      <figure>
+        <img src="./assets/images/img.jpeg">
+        <figcaption>Name:Vadapav</figcaption>
+        <figcaption>price:40</figcaption>
+        <button mat-raised-button color="warn">ADD</button>
+      </figure>-->
+    </div>
+  </body>

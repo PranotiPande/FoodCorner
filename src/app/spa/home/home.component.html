@@ -1,0 +1,33 @@
+
+<ngb-carousel
+[showNavigationArrows]="true" 
+[showNavigationIndicators]="true"
+interval="2500"
+[keyboard]="true"
+[pauseOnHover]="true"
+[wrap]="true"
+[activeId]="'secondSlide'"
+>
+  <ng-template ngbSlide id="firstSlide">
+    <div class="picsum-img-wrapper">
+      <img src="assets/images/img1.jpg" alt="Angular Carousel 1">
+    </div>
+    <div class="carousel-caption">
+      <h1>Great Food And High Quality service</h1>
+      <p>Welcome To Food Corner</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide id="secondSlide">
+    <div class="picsum-img-wrapper">
+      <img src="assets/images/img1.jpg" alt="Angular Carousel 2">
+    </div>
+    <div class="carousel-caption">
+      <h3>ALWAYS FRESH AND QUITE</h3>
+      <p>quality Products</p>
+    </div>
+  </ng-template>
+</ngb-carousel>
+
+
+
+

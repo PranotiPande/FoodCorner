@@ -1,0 +1,20 @@
+
+<mat-toolbar color="warn">
+  <button mat-fab color="basic"  routerLink="/home" routerLinkActive="activebutton"aria-label="Example icon button with a home icon">
+    <mat-icon>home</mat-icon>
+  </button>
+  <button mat-button color="basic" routerLink="/admin" routerLinkActive="activebutton">Admin login</button>
+  <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+<!-- #enddocregion mat-menu-trigger-for -->
+<mat-menu #menu="matMenu">
+  <button mat-menu-item routerLink="/breakfast" routerLinkActive="activebutton">Break Fast Food</button>
+  <button mat-menu-item routerLink="/lunch_dinner" routerLinkActive="activebutton">Lunch/Dinner Food</button>
+  <button mat-menu-item routerLink="/fastfood" routerLinkActive="activebutton">Fast Food</button>
+  <button mat-menu-item routerLink="/desert" routerLinkActive="activebutton">Desert</button>
+</mat-menu>
+<button mat-button color="basic" routerLink="/totalbill" routerLinkActive="activebutton">Total Bill</button>
+
+</mat-toolbar>
+ 
+   
+

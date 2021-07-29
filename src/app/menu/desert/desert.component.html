@@ -1,0 +1,10 @@
+<body>
+    <div class="gallery">
+      <figure *ngFor="let food of desertsarr">
+        <img src="{{food.path}}" class="img">
+        <figcaption>Name:{{food.name}}</figcaption>
+        <figcaption>price:{{food.price}}</figcaption>
+        <button mat-raised-button color="warn" (click)="addToBill(food)">ADD</button>
+      </figure>
+    </div>
+</body>
